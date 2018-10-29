@@ -158,9 +158,9 @@ def main():
       auto_config=args.auto_config)
 
   if args.run == "train_and_eval":
-    runner.train_and_evaluate(checkpoint_path=args.checkpoint_path)
+    runner.train_and_evaluate()
   elif args.run == "train":
-    runner.train(checkpoint_path=args.checkpoint_path)
+    runner.train()
   elif args.run == "eval":
     runner.evaluate(checkpoint_path=args.checkpoint_path)
   elif args.run == "infer":
